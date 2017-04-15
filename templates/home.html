@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Mindful Initiative</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+
+<body>
+    <div class="flex">
+        <nav class="img-holder">
+            <a href="/"><img class="img-symbol" src="{% static 'v2.1.png' %}" width="100px;"></a>
+            <br> Pause | Reflect | Realize
+        </nav>
+        <nav>
+            <div class="nav-buttons">
+                <a href="/">HOME</a>
+                <a href="/offerings">OFFERINGS</a>
+                <a href="#">FOCUS AREA</a>
+                <a href="/blog">BLOG</a>
+                <a href="/about-us">ABOUT US</a>
+            </div>
+        </nav>
+        <h1 class="heading">THE MINDFUL INITIATIVE</h1>
+        {% block content %} {% endblock %}
+    </div>
+</body>
+
+</html>
